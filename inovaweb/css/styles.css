@@ -1,0 +1,18 @@
+        h1 {
+            font-size: 50pt;
+            color: #2c3e50;
+            font-family: 'Arial', sans-serif;
+        }
+        .destaque {
+            background-color: yellow;
+        }
+        .bnt {
+            padding: 10px 20px;
+        }   
+         .italico {
+            font-style: italic;
+        }   
+        /* select de id- aplica a elemento unico */
+        #header {
+            color: red;
+        }   

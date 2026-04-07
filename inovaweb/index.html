@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>InovaWeb</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1>InovaWeb</h1>
+        <h2 class="destaque italico">Sua solução tecnológica perfeita</h2>
+        <p>Criamos sites modernos, responsivos e inovadores para sua empresa se destacar no mercado
+            digital</p>
+        <!-- Isto é um comentário 
+        <hr noshade>
+        -->
+        <img src="./IMAGEM_SITE_RESPONSIVO.png" alt="banner do site" width="700">
+        <nav>
+            <li><a href="https://www.google.com" target="_blank">GOOGLE</a></li>
+            <li><a href="https://www.globo.com" target="_blank">Globo</a></li>
+            <li>teste</li>
+        </nav>    
+    </header>
+
+    <h3>Lista de Serviços</h3>
+    <ul>
+        <li>Desenvolvimento de sites</li>
+        <li>Design responsivo</li>
+        <li>SEO</li>
+        <li>Marketing digital</li>
+    </ul>
+
+    <table border="1">
+        <caption>Tabela de Preços</caption>
+        </cation>
+        <thead>
+            <tr>
+                <th>Plano</th>
+                <th>Preço</th>
+                <th>Recursos</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Basic</td>
+            <td>$99/mês</td>
+            <td>Site básico, Suporte por email</td>
+        </tr>
+        <tr>
+            <td>Pro</td>
+            <td>$199/mês</td>
+            <td>Site avançado, Suporte 24/7, SEO</td>
+        </tr>
+        <tr>
+            <td>Premium</td>
+            <td>$299/mês</td>
+            <td>Site personalizado, Suporte dedicado, Marketing digital</td>
+        </tr>
+    </table>
+    <div style=padding:15px; margin-top: 20px;">
+    </div>
+    <form action="/submit" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
