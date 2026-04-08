@@ -1,18 +1,275 @@
-        h1 {
-            font-size: 50pt;
-            color: #2c3e50;
-            font-family: 'Arial', sans-serif;
-        }
-        .destaque {
-            background-color: yellow;
-        }
-        .bnt {
-            padding: 10px 20px;
-        }   
-         .italico {
-            font-style: italic;
-        }   
-        /* select de id- aplica a elemento unico */
-        #header {
-            color: red;
-        }   
+/* =========================
+   IMPORTAÇÃO DE FONTES
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+
+/* =========================
+   RESET MODERNO
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BASE
+========================= */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTAINER GLOBAL
+========================= */
+
+main,
+header,
+footer {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.destaque {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.italico {
+    font-style: italic;
+}
+
+
+/* =========================
+   IMAGEM
+========================= */
+
+figure {
+    margin: 30px 0;
+}
+
+figure img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #777;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    margin-top: 50px;
+}
+
+section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   TABELA (Minimalista)
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+caption {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid black; /* pedido seu */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    padding-bottom: 30px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    nav li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+}
